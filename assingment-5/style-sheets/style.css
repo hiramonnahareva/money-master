@@ -1,0 +1,13 @@
+/* css start  */
+img {
+    height: 80vh !important;
+}
+.top-part {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.notification {
+    display: none;
+}
