@@ -2,10 +2,16 @@
 img {
     height: 80vh !important;
 }
+section{
+    width: 100%;
+}
 .top-part {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+}
+#saveing-input{
     width: 100%;
 }
 .notification {
