@@ -46,8 +46,10 @@
         <input id="clothes" type="number" class="col-3 text-center" value="500">
         </div>
             <button id="calc-btn" class="btn btn-primary btn-lg m-5 md-5">Calculator</button>
-            <h4>Total Expenses : <span id="total-expeses">0</span></h4>
-            <h4>Balance : <span id="balance">0</span></h4>
+            <h4 id="expenses-text">Total Expenses : <span id="total-expeses">0</span></h4>
+            <p id="error" class="notification">❌ don't use wrong value, Please try again</p>
+            <h4 id="balance-text">Balance : <span id="balance">0</span></h4>
+            
            <section>
                <!-- Saving Part  -->
             <div class="row mt-5">
@@ -57,8 +59,9 @@
                 <div class="col-3"><button id="save-btn" class="btn btn-primary">Save</button></div>
             </div>
            <div class="my-5">
-            <h4>Savig Amount : <span id="saving-amount"> 0</span> </h4>
-            <h4>Remaining Balance : <span id="Remaining-balance" > 0</span></h4>
+            <h4 id="saving-text">Savig Amount : <span id="saving-amount"> 0</span> </h4>
+            <h4 id="remaining-text">Remaining Balance : <span id="Remaining-balance" > 0</span></h4>
+            <p id="remaining-error" class="notification">❌ don't use wrong value, Please try again</p>
            </div>
            </section>
     </div>
