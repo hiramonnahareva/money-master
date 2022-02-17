@@ -16,7 +16,7 @@ document.getElementById ('calc-btn').addEventListener('click' ,function (){
   const rentAmount =  inputValue('rent')
   const clothesAmount =  inputValue('clothes')
   // total expanses part
-  const expensesText = document.getElementById ('total-expeses');
+  const expensesText = document.getElementById ('total-expenses');
   const expensesTotal = foodAmount + rentAmount + clothesAmount; 
   if (expensesTotal>0){
   expensesText.innerText = expensesTotal ;
@@ -30,7 +30,7 @@ document.getElementById ('calc-btn').addEventListener('click' ,function (){
   }
   const balance =  document.getElementById ('balance') ;
   // total balance part 
-  if (incomeAmount > expensesTotal) {
+  if ( incomeAmount > expensesTotal) {
   const balanceTotal = incomeAmount - expensesTotal ;
   balance.innerText = balanceTotal ;
   document.getElementById ('balance-text').style.display = 'block' ;
@@ -47,12 +47,11 @@ document.getElementById ('save-btn').addEventListener('click' , function (){
   const savingInput = inputValue('saveing-input') ;
   const incomeAmount = inputValue('income') ;
   const balanceText  =  document.getElementById ('balance').innerText
+  const expansesText  =  document.getElementById ('total-expenses').innerText
   const balanceAmount  = parseFloat(balanceText)
   const savingAmountTotal = incomeAmount*savingInput/100 ;
   document.getElementById ('saving-amount').innerText = savingAmountTotal ;
-  // const savingAmount = savingAmountTotal ;
-
-  if (savingAmountTotal < balanceAmount){
+  if (savingAmountTotal < balanceAmount && expansesText<incomeAmount){
     const remainingBalance = balanceAmount - savingAmountTotal ;
     document.getElementById ('Remaining-balance').innerText = remainingBalance ;
     document.getElementById ('remaining-error').style.display = 'none' ;
